@@ -1,11 +1,11 @@
-#  from django.shortcuts import render
+from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
 
 
 def home(request):
-    return HttpResponse('home')  # Tela Home
+    return render(request, 'games/pages/home.html')
 
 
 def cadPartida(request):

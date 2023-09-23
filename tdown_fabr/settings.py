@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # A gente tem apps também
-    'tdown_fabr'
+    'app_tdown'
 ]
 
 MIDDLEWARE = [
