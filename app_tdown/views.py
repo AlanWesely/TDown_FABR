@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'games/pages/home.html')
+    return render(request, 'app_tdown/pages/home.html')
 
 
 def cadPartida(request):
