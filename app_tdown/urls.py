@@ -1,10 +1,10 @@
 from django.urls import path
-from app_tdown.views import home, cadPartida, cadJogada, cadTime
+from . import views
 
 
 urlpatterns = [
-    path('', home),     # Acessa a Tela Home
-    path('cadastro-partida/', cadPartida),  # Acessa a Tela Cadastro de Partida
-    path('cadastro-jogada/', cadJogada),    # Acessa a Tela Cadastro de Jogadas
-    path('cadastro-time/', cadTime)  # Acessa a Tela Cadastro de Times
+    path('', views.home),     # Acessa a Tela Home
+    path('cadastro-partida/<id>/', views.cadPartida),  # Acessa a Tela Cadastro de Partida
+    path('cadastro-jogada/', views.cadJogada),    # Acessa a Tela Cadastro de Jogadas
+    path('cadastro-time/', views.cadTime)  # Acessa a Tela Cadastro de Times
 ]

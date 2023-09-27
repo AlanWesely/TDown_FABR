@@ -8,8 +8,8 @@ def home(request):
     return render(request, 'app_tdown/pages/home.html')
 
 
-def cadPartida(request):
-    return HttpResponse('cadPartida')  # Cadastro de Partida
+def cadPartida(request, id):
+    return render(request, 'app_tdown/pages/cadPartida.html')  # Cadastro de Partida
 
 
 def cadJogada(request):
