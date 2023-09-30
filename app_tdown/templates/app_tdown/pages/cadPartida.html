@@ -1,17 +1,8 @@
-{% include 'app_tdown/partials/head.html' %}
+{% extends "global/base.html" %}
 
-    <body>
-    {% include 'app_tdown/partials/header.html' %}
-    {% include 'app_tdown/partials/search.html' %}
+{% block content %}
+    <div class="main-content main-content-detail container">
+        {% include 'app_tdown/partials/games.html' %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-detail container">
-            {% include 'app_tdown/partials/games.html' %}
-
-        </div>
-    </main>
-
-    {% include 'app_tdown/partials/footer.html' %}
-</body>
-
-</html>
+    </div>
+{% endblock content %}
