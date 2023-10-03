@@ -1,4 +1,10 @@
-{% include 'app_tdown/partials/head.html' %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        {% include 'app_tdown/partials/head.html' %}
+        <title>{% block title %}{% endblock title %}Recipes</title>
+    </head>
 
     <body>
     {% include 'app_tdown/partials/header.html' %}
