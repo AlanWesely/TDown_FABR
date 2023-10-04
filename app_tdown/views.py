@@ -1,15 +1,19 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from utils.games.factory import make_game
 # Create your views here.
 
 
 def home(request):
-    return render(request, 'app_tdown/pages/home.html')
+    return render(request, 'app_tdown/pages/home.html', context={
+        'games': [make_game() for _ in range(10)],
+    })
 
 
 def cadPartida(request, id):
-    return render(request, 'app_tdown/pages/cadPartida.html')  # Cadastro de Partida
+    return render(request, 'app_tdown/pages/cadPartida.html', context={
+        'game': make_game(),
+    })  # Cadastro de Partida
 
 
 def cadJogada(request):
