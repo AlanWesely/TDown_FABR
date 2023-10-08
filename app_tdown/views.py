@@ -24,7 +24,9 @@ def viewPartida(request, id):
 
 
 def cadJogada(request):
-    return HttpResponse('cadJogada')  # Cadastro das Jogadas
+    return render(request, 'app_tdown/pages/cadJogadas.html', context={
+        'game': make_game(),
+    })   # Cadastro das Jogadas
 
 
 def cadTime(request):
