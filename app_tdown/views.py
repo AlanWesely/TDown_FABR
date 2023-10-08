@@ -19,6 +19,7 @@ def cadPartida(request, id):
 def viewPartida(request, id):
     return render(request, 'app_tdown/pages/viewPartida.html', context={
         'game': make_game(),
+        'is_detail_page': True,
     })  # Cadastro de Partida
 
 
